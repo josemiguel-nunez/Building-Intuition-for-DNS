@@ -29,23 +29,27 @@ First we will be inspecting DNS A-Records on the server A records are hostname t
 <br />
 
 <p>
-<img src="https://i.imgur.com/xKePr4k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<img src="https://i.imgur.com/yAlrhZw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/1343036b-786c-44d3-b159-fd6db0f8ff24" height="80%" width="80%"  />
+
+<img src=https://github.com/user-attachments/assets/6741d1b9-3a43-4987-871c-40621a830aec height="80%" width="80%"  />
+
 <p>
 Now we will change the record address of "mainframe" to 8.8.8.8 if we go back to the client machine it will still ping the old address even though we changed it. That is because we have to flush the DNS with the command ipconfig /flushdns. That will clear the DNS cache, when we attempt to ping mainframe again the address of the new record will show. 
 </p>
 <br />
-<img src="https://i.imgur.com/KYNmZMz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/d0036f82-ff7e-43b2-a769-32e97e7fc874" height="80%" width="80%"  />
 </p>
-<img src="https://i.imgur.com/80ARdZu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/a4997149-f02b-46fd-9d0b-be60effc16bb" height="80%" width="80%" />
 </p>
 <p>
 Lastly we will configure a CNAME record that points the host "search" to "www.google.com" If we ping "search" ping will not be able to find the host. we have to go back into the DNS tool on DC-1 and create the CNAME record "search". Once we create the CNAME record is created and we ping "search" it will resolve to www.google.com.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/LgomfqN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/4e245f77-5a46-4bae-a1c6-e377087ebe85" height="80%" width="80%" />
+"/>
 </p>
-<img src="https://i.imgur.com/NovtDrd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/d1b69502-2eb2-4d32-b9b9-bc91f4e453ac" height="80%" width="80%" />
+/>
 <p>
